@@ -4,29 +4,8 @@
 
 .wallet{
   width: 100%;
-  height: auto;
-  background-color: red;
-}
-
-.left_side{
-  width: 40%;
-  height: auto;
-  float: left;
-}
-
-.left_side button{
-  margin-left: 200px;
-  margin-top: 15px;
-}
-
-.right_side{
-  width: 40%;
-  height: 80vh;
-  float: right;
-  margin-right: 100px;
-  border: 2px solid grey;
-  background-color: #f9f9f9;
-  border-radius: 20px;
+  height: 100%;
+  background-color: transparent;
 }
 
 button{
@@ -34,11 +13,6 @@ button{
   height: 40px;
   border-radius: 5px;
   font-size: 15px;
-}
-
-#output{
-  width: 95%;
-  height: 93%;
-  margin-left: 15px;
-  word-wrap:break-word;
+  margin-top: 50px;
+  margin-left: 50px;
 }

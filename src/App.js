@@ -5,7 +5,7 @@ import Wallet from './components/ComponentWallet.js'
 function App() {
   return (
     <div className="App">
-      <h1 className="header">Welcome to Web3 wallet</h1>
+      <h1 className="header">Wallet using Web3 & eth-Light</h1>
       <Wallet/>
     </div>
   );

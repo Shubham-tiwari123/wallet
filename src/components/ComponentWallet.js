@@ -1,31 +1,18 @@
 import React,{Component} from 'react';
-import WalletFunction from './walletFunction';
+const walletFunction = require('../lib/wallet.js')
 
 class Wallet extends Component {
 
     render() {
         return(
             <div className="wallet">
-                <div className="left_side">
-                    <button onClick={WalletFunction.createWallet}>Create Wallet</button><br/>
-
-                    <button onClick={WalletFunction.addAccount1}>Add Account1</button><br/>
-
-                    <button onClick={WalletFunction.addAccount2}>Add Account2</button><br/>
-
-                    <button onClick={WalletFunction.encryptWallet}>Encrypt</button><br/>
-
-                    <button onClick={WalletFunction.saveWallet}>Save</button><br/>
-
-                    <button onClick={WalletFunction.loadWallet}>Load Wallet</button><br/>
-
-                    <button onClick={WalletFunction.removeAccount}>Remove account</button><br/>
-
-                    <button onClick={WalletFunction.clearWallet}>Empty Wallet</button><br/>
-                </div>
-                <div className="right_side">
-                    <h3 id="output"/>
-                </div>
+                <button onClick={() => walletFunction.createWallet()}>Create Wallet</button>
+                <button onClick={() => walletFunction.addAccountEth()}>Add Account</button>
+                <button onClick={() => walletFunction.addAccountWeb3()}>Add Account using key</button>
+                <button onClick={() => walletFunction.restoreWallet()}>Restore Wallet</button>
+                <button onClick={() => walletFunction.restoreSeed()}>Restore seed</button>
+                <button onClick={() => walletFunction.clearWallet()}>Clear Wallet</button>
+                <button onClick={() => walletFunction.getAllAccounts()}>Get All Accounts</button>
             </div>
         )
     }
